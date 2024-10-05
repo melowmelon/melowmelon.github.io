@@ -1,0 +1,346 @@
+:root{
+    --purple: #2F192E;
+    --purple-light: #30192d;
+    --dark-blue: #012677;
+    --blue: #5c65c0;
+    --skyblue :#00b4fc;
+    --light-blue: #005bc5;
+    --dark-pink: #79305a;
+    --dark-magenta:#e21b5a;
+    --orange:#ec8134;
+    --light-green:#61e2c2;
+    --light-purple:#d9abff;
+    --dark-grey:#12100E;
+    --deep-blue: #2B4162;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+body {
+    background: linear-gradient(45deg, var(--light-green), var(--orange));
+    background-size: 200% 200%; /* Increase the size to create the animation effect */
+    animation: gradientAnimation 40s ease infinite; /* Apply the animation */
+}
+  
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+.profile-card{
+    background: #111;
+    width: 400px;
+    padding: 3rem;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relative;
+    color: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    opacity: 85%;
+}
+.profile-card .profile-pic{
+    margin-top: 15px;
+    overflow: hidden;
+
+}
+.profile-card .profile-pic img{
+    border-radius: 10px;
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h4{
+    background: #1d1d1d;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+}
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+.profile-details .intro .social i{
+    color: #ddd;
+    font-size: 16px;
+    background-color: #222;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.profile-details .intro .social i:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba (255, 255, 255, 0.3);
+}
+.profile-details .contact-info{
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+.profile-details .contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.contact-info .row .icon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #111;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+.row .icon:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.row .content{
+    min-width: 70%;
+    font-size: 15px;
+    line-height: 22px;
+    
+}
+.row .content span{
+    font-size: 12px;
+}
+.download-btn{
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    border: none;
+}
+.download-btn:hover{
+    background: linear-gradient(45deg, #7d272d, #610723);
+    transform: scale(1.05);
+}
+
+.about{
+    background-color: #111;
+    max-width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    opacity:85%;
+}
+.about h1{
+    color: #f2f2f2;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+}
+.about h1::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -50%;
+    width: 45%;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+}
+.about h2{
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+.about p{
+    color: #bdb9b9;
+    margin: 1.5rem 0;
+}
+.about .about-text{
+    color: #bdb9b9;
+    margin: 1.5rem 0;
+}
+.about .work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.work .workbox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+.work .workbox .desc{
+    width: 75%;
+    color: #555;
+}
+.work .workbox .desc a{
+    color: #c86464;
+}
+.work .workbox .desc a:hover {
+    background-color: #992323;
+}
+.work .workbox .desc h3{
+    color: #f2f2f2;
+    margin-bottom: 3px;
+}
+.work .workbox .desc p{
+    margin: 0px;
+}
+.work .workbox .desc .skills-list{
+    color: #bdb9b9;
+    margin-left: 10px;
+    
+}
+.project-title {
+    display: inline-block; /* Keep the title inline with the text */
+    background-color: #f0f0f0; /* Light background color */
+    padding: 10px 15px; /* Padding inside the title box */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 5px; /* Space between the title box and description */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.project-title:hover {
+    background-color: #c7c5c5; /* Change background on hover */
+}
+
+/* Show description when hovering over the title link */
+.project-title:hover + .project-description {
+    visibility: visible; /* Change visibility instead of display */
+    opacity: 1; /* Make it fully opaque */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.project-description {
+    visibility: hidden; /* Hide project descriptions by default */
+    opacity: 0; /* Set initial opacity to 0 */
+    font-size: 14px; /* Optional: Set font size for descriptions */
+    color: #bdb9b9; /* Optional: Set text color for better readability */
+    transition: visibility 0s 0.3s, opacity 0.3s ease; /* Delay visibility change for smoother transition */
+    text-align: center;
+}
+
+/* Show description when hovering over the link */
+.project-link:hover + .project-description {
+    visibility: visible; /* Show the description */
+    opacity: 1; /* Make it fully opaque */
+    text-align: center;
+}
+
+.work-experience {
+    display: block; /* Stack job title and details */
+    background-color: #f2f2f2; /* Light background color for job boxes */
+    padding: 10px; /* Padding inside the job boxes */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between job boxes */
+}
+.work-experience:hover{
+    background-color: #c7c5c5;
+}
+
+.job-title {
+    font-weight: bold; /* Make job title bold */
+}
+
+.job-details {
+    display: inline-block; /* Keep details inline */
+    font-size: 14px; /* Optional: Set font size for job details */
+    color: #555; /* Optional: Set text color for better readability */
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* Wrap skills to new lines if needed */
+    gap: 10px; /* Space between each skill box */
+  }
+  
+.skill-box {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 10px 15px; /* Padding inside each skill box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    font-size: 14px; /* Font size */
+}
+.skill-box:hover {
+    background-color: #c7c5c5;
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+/* responsive things */
+@media(max-width: 768px)
+{
+    .about{
+        width: 1005;
+        max-width: 400px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .about h1{
+        font-size: 2.2rem;
+    }
+    .about .work{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End in original position */
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 0.5s forwards; /* Animation properties */
+}
