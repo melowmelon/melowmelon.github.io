@@ -4,228 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website designing -K2infocom</title>
-    <!-- external css -->
+    <title>Merin Ashokkumar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="webic.png" type="image/png">
-    <!-- font awesome cdn for font icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="profile-card">
-            <div class="profile-pic">
-                <img src="avatar.jpg" alt="user avatar">
-
-            </div>
-
-            <div class="profile-details">
-                <div class="intro">
-                    <h2> Merin Ashokkumar</h2>
-                    <h4>CS @ Rutgers University</h4>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/merin-ashokkumar-560646272" target="_blank"><i class="fab fa-linkedin" style="color:var(--light-blue)"></i></a>
-                        <a href="https://github.com/melowmelon" target="_blank"><i class="fab fa-github" style="color:var(--blue)"></i></a>
-
-
-                    </div>
-                </div>
-                <div class="contact-info">
-                    <div class="row">
-                        <div class="icon">
-                            <i class="fa fa-phone" style="color:var(--dark-magenta)"></i>
-                        </div>
-                        <div class="content">
-                            <span>Phone</span>
-                            <h5>(609)-712-0344</h5>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="icon">
-                            <i class="fa fa-envelope-open" style="color:var(--light-green)"></i>
-                        </div>
-                        <div class="content">
-                            <span>Email</span>
-                            <h5>merinashokkumar99@gmail.com</h5>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="icon">
-                            <i class="fa fa-map-marker" style="color:var(--light-purple)"></i>
-                        </div>
-                        <div class="content">
-                            <span>Location</span>
-                            <h5>Plainsboro, New Jersey</h5>
-                        </div>
-                    </div>
-                
-                </div>
-                <a href="resume.pdf" download>
-                    <button class="download-btn">Download Resume</button>
-                </a>
-            </div>   
+    <div id="cursor-bubble"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Merin Ashokkumar</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
         </div>
-        <!-- abt section -->
-         <div class="about">
-            <h1>About Me</h1>
-            <div class="about-text">
-                <span class="fade-in">I</span>
-                <span class="fade-in">am</span>
-                <span class="fade-in">Merin</span>
-                <span class="fade-in">Ashokkumar,</span>
-                <span class="fade-in">an</span>
-                <span class="fade-in">aspiring</span>
-                <span class="fade-in">Computer</span>
-                <span class="fade-in">Science</span>
-                <span class="fade-in">student</span>
-                <span class="fade-in">at</span>
-                <span class="fade-in">Rutgers</span>
-                <span class="fade-in">University,</span>
-                <span class="fade-in">specializing</span>
-                <span class="fade-in">in</span>
-                <span class="fade-in">programming</span>
-                <span class="fade-in">and</span>
-                <span class="fade-in">software</span>
-                <span class="fade-in">development.</span>
-                <span class="fade-in">As</span>
-                <span class="fade-in">an</span>
-                <span class="fade-in">entry-level</span>
-                <span class="fade-in">candidate,</span>
-                <span class="fade-in">I</span>
-                <span class="fade-in">bring</span>
-                <span class="fade-in">a</span>
-                <span class="fade-in">new</span>
-                <span class="fade-in">perspective</span>
-                <span class="fade-in">and</span>
-                <span class="fade-in">a</span>
-                <span class="fade-in">strong</span>
-                <span class="fade-in">foundation</span>
-                <span class="fade-in">in</span>
-                <span class="fade-in">communication</span>
-                <span class="fade-in">and</span>
-                <span class="fade-in">detail-oriented</span>
-                <span class="fade-in">problem-solving.</span>
-                <span class="fade-in">I</span>
-                <span class="fade-in">am</span>
-                <span class="fade-in">eager</span>
-                <span class="fade-in">to</span>
-                <span class="fade-in">contribute</span>
-                <span class="fade-in">my</span>
-                <span class="fade-in">skills</span>
-                <span class="fade-in">to</span>
-                <span class="fade-in">innovative</span>
-                <span class="fade-in">projects</span>
-                <span class="fade-in">and</span>
-                <span class="fade-in">make</span>
-                <span class="fade-in">a</span>
-                <span class="fade-in">distinct</span>
-                <span class="fade-in">impact</span>
-                <span class="fade-in">in</span>
-                <span class="fade-in">the</span>
-                <span class="fade-in">field</span>
-                <span class="fade-in">of</span>
-                <span class="fade-in">technology.</span>
-            </div>
-            
-            <h2>Background <!DOCTYPE html></h2>
-            <div class="work">
-                <div class="workbox" id="programming">
-                    <div class="icon">
-                      <img src="code.png" alt="">
-                    </div>
-                    <div class="desc">
-                      <h3>Programming</h3><br>
-                      <div class="skills">
-                        <div class="skill-box fade-in">Java</div>
-                        <div class="skill-box fade-in">Python</div>
-                        <div class="skill-box fade-in">C</div>
-                        <div class="skill-box fade-in">JavaScript</div>
-                        <div class="skill-box fade-in">HTML</div>
-                        <div class="skill-box fade-in">CSS</div>
-                        <div class="skill-box fade-in">R</div>
-                    </div>
-                    </div>
-                  </div>
-                  
+    </nav>
 
-                <div class="workbox" id="other-skills">
-                    <div class="icon">
-                      <img src="puzzle.png" alt="">
-                    </div>
-                    <div class="desc">
-                      <h3>Other Skills</h3><br>
-                      <div class="skills">
-                        <div class="skill-box fade-in">Microsoft Office</div>
-                        <div class="skill-box fade-in">University Teaching</div>
-                        <div class="skill-box fade-in">Tensorflow</div>
-                        <div class="skill-box fade-in">Machine Learning</div>
-                      </div>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-section">
+            <h2 id="welcome-title"></h2>
+            <p id="welcome-description"></p>
+            <button id="download-btn" class="download-btn" style="display: none;">Download Resume</button>
+        </div>        
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="avatar-container">
+                <img src="avatar.jpg" alt="Merin Ashokkumar" class="avatar">
+            </div>
+            <div class="about-text-container">
+                <p><br>I am an aspiring Computer Science student at Rutgers University specializing in programming and software development. With a strong foundation in problem-solving and a detail-oriented approach, I am eager to contribute to innovative projects and make a distinct impact in the technology field.</p>
+            </div>
+        </div>
+        <br>
+        <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">R</span>
                     </div>
                 </div>
-                  
-
-                <div class="workbox" id="projects">
-                    <div class="icon">
-                        <img src="project.png" alt="">
+                <div class="skill-box">
+                    <h3>Other Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Microsoft Office</span>
+                        <span class="skill-item">University Teaching</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">Machine Learning</span>
                     </div>
-                    <div class="desc">
-                        <h3>Projects</h3>
-                        <div class="project-box">
-                            <p><br>
-                                <span class="project-title fade-in" >
-                                    <a href="https://github.com/melowmelon/Summer-Project/tree/main/CookCo" target="_blank" class="project-link">
-                                        CookCo Website
-                                    </a>
-                                </span>
-                                <span class="project-description">
-                                    <br>Asks users for available or preferred ingredients and suggests the top 5 meals they can prepare.
-                                </span>
-                            </p>
-                            <p><br>
-                                <span class="project-title fade-in">
-                                    <a href="https://github.com/melowmelon/Summer-Project/tree/main/Speech%20To%20Text" target="_blank" class="project-link">
-                                        Speech To Text Bot
-                                    </a>
-                                </span>
-                                <span class="project-description">
-                                    Translates verbal communication into written text in real time using Google Audio Recognition tool.
-                                </span>
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>                
-
-                <div class="workbox" id="work-experience">
-                    <div class="icon">
-                        <img src="work.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <h3>Work Experience</h3><br>
-                        <div class="work-experience fade-in">
-                            <span class="job-title">
-                                Learning Assistant for Physics @ Rutgers
-                            </span>
-                            <span class="job-details">
-                                <br>-- Jan 2024 - Current
-                            </span>
-                        </div>
-                        <br>
-                        <div class="work-experience fade-in">
-                            <span class="job-title">
-                                Baker/Barista @ The Cheesecake Factory
-                            </span>
-                            <span class="job-details">
-                                <br>-- May 2022 - Sep 2022
-                            </span>
-                        </div>
-                    </div>
-                </div>                
+                </div>
             </div>
-         </div>
+        
+        
+                    
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3><a href="https://github.com/melowmelon/Summer-Project/tree/main/CookCo" target="_blank">CookCo Website</a></h3>
+                <p>Asks users for available or preferred ingredients and suggests the top 5 meals they can prepare.</p>
+            </div>
+            <div class="project-box">
+                <h3><a href="https://github.com/melowmelon/Summer-Project/tree/main/Speech%20To%20Text" target="_blank">Speech To Text Bot</a></h3>
+                <p>Translates verbal communication into written text in real time using Google Audio Recognition tool.</p>
+            </div>
+            <div class="project-box">
+                <h3><a href="https://github.com/melowmelon/Summer-Project/tree/main/SurvivorGame" target="_blank">Survivor Game</a></h3>
+                <p>Created a simple shooting survivor game to introduce myself into PyGame.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Floating Contact Icons -->
+    <div class="floating-icons">
+        <div class="icon phone">
+            <i class="fa fa-phone"></i>
+            <span class="tooltip">Phone: (609)-712-0344</span>
+        </div>
+        <div class="icon email">
+            <i class="fa fa-envelope-open"></i>
+            <span class="tooltip">Email: merinashokkumar99@gmail.com</span>
+        </div>
+        <div class="icon address">
+            <i class="fa fa-map-marker"></i>
+            <span class="tooltip">Location: Plainsboro, New Jersey</span>
+        </div>
+        <div class="icon linkedin">
+            <a href="https://www.linkedin.com/in/merin-ashokkumar-560646272" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <span class="tooltip">LinkedIn</span>
+        </div>
+        <div class="icon github">
+            <a href="https://github.com/melowmelon" target="_blank"><i class="fab fa-github"></i></a>
+            <span class="tooltip">GitHub</span>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
